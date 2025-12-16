@@ -4,7 +4,7 @@
 
 /*
 WHAT IS AN ARRAY?
-================
+=================
 An array is a special variable that can hold multiple values at once. 
 Think of it like a list or a collection of items. Arrays are ordered, 
 meaning each item has a position (called an index) starting from 0.
@@ -107,14 +107,15 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise1Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.filter(n => n % 2 !== 0);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.filter((n) => {
+  return n % 2 !== 0;
+});
 
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
@@ -131,14 +132,15 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise2Array = ["apple", "banana", "kiwi", "orange", "grape"];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.filter(fruit => fruit.length >= 5);
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.filter((fruit) => {
+  return fruit.length >= 5;
+});
 
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
@@ -155,14 +157,15 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise3Array = [15, 8, 22, 5, 30, 12, 18];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
+const exercise3Result1 = exercise3Array.filter(n => n > 10);
 
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
+const exercise3Result2 = exercise3Array.filter((n) => {
+  return n > 10;
+});
 
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
@@ -181,14 +184,15 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.filter(color => color.startsWith("b"));
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.filter((color) => {
+  return color.startsWith("b");
+});
 
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
@@ -198,24 +202,24 @@ const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 /*
 EXERCISE 5
 ----------
-Given the array [2, 4, 6, 8, 10, 11, 12, 13, 14], use filter() to create 
-a new array with only the numbers that are divisible by 4.
+Given the array [2, 4, 6, 8, 10, 11, 12, 13, 14], use filter() to create a 
+new array with only the numbers that are divisible by 4.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise5Array = [2, 4, 6, 8, 10, 11, 12, 13, 14];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.filter(n => n % 4 === 0);
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.filter((n) => {
+  return n % 4 === 0;
+});
 
 // Uncomment to test:
 // console.log("Exercise 5 - One-line:", exercise5Result1);
 // console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: [4, 8, 12]
-

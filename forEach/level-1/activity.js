@@ -4,9 +4,9 @@
 
 /*
 WHAT IS AN ARRAY?
-================
-An array is a special variable that can hold multiple values at once. 
-Think of it like a list or a collection of items. Arrays are ordered, 
+=================
+An array is a special variable that can hold multiple values at once.
+Think of it like a list or a collection of items. Arrays are ordered,
 meaning each item has a position (called an index) starting from 0.
 
 Example:
@@ -18,9 +18,10 @@ const mixed = [1, "hello", true, 42];
 /*
 WHAT IS THE forEach() FUNCTION?
 ================================
-The forEach() function is used to EXECUTE A FUNCTION for each element 
-in an array. Unlike map(), it doesn't return a new array - it's used 
-for performing actions or side effects (like printing, updating variables, etc.).
+The forEach() function is used to EXECUTE A FUNCTION for each element
+in an array. Unlike map(), it doesn't return a new array - it's used
+for performing actions or side effects (like printing, updating
+variables, etc.).
 
 Key Points:
 - Executes a function for each element
@@ -108,64 +109,67 @@ console.log("Example 3 - Regular sum:", sum); // 60
 /*
 EXERCISE 1
 ----------
-Given the array [1, 2, 3, 4, 5], use forEach() to print each number 
+Given the array [1, 2, 3, 4, 5], use forEach() to print each number
 multiplied by 2.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(n => console.log(n * 2));
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((n) => {
+  console.log(n * 2);
+});
 
 // Expected output: 2, 4, 6, 8, 10 (each on a new line)
 
 /*
 EXERCISE 2
 ----------
-Given the array ["apple", "banana", "orange"], use forEach() to print 
+Given the array ["apple", "banana", "orange"], use forEach() to print
 each fruit name in uppercase.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise2Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.forEach(fruit => console.log(fruit.toUpperCase()));
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((fruit) => {
+  console.log(fruit.toUpperCase());
+});
 
 // Expected output: "APPLE", "BANANA", "ORANGE" (each on a new line)
 
 /*
 EXERCISE 3
 ----------
-Given the array [5, 10, 15, 20], use forEach() to calculate and print 
+Given the array [5, 10, 15, 20], use forEach() to calculate and print
 the sum of all numbers. Use a variable to store the sum.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise3Array = [5, 10, 15, 20];
 let exercise3Sum = 0;
 
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach(
+exercise3Array.forEach(n => exercise3Sum += n);
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((n) => {
+  exercise3Sum += n;
+});
 
 // Uncomment to test:
 // console.log("Exercise 3 - Sum:", exercise3Sum);
@@ -174,42 +178,43 @@ let exercise3Sum = 0;
 /*
 EXERCISE 4
 ----------
-Given the array ["red", "green", "blue"], use forEach() to print each 
+Given the array ["red", "green", "blue"], use forEach() to print each
 color with the text "Color: " before it.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise4Array = ["red", "green", "blue"];
 
 // Your solution here (one-line arrow function):
-// exercise4Array.forEach(
+exercise4Array.forEach(color => console.log(`Color: ${color}`));
 
 // Your solution here (regular arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((color) => {
+  console.log(`Color: ${color}`);
+});
 
 // Expected output: "Color: red", "Color: green", "Color: blue" (each on a new line)
 
 /*
 EXERCISE 5
 ----------
-Given the array [2, 4, 6, 8], use forEach() to print each number squared 
-(multiplied by itself).
+Given the array [2, 4, 6, 8], use forEach() to print each number
+squared (multiplied by itself).
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise5Array = [2, 4, 6, 8];
 
 // Your solution here (one-line arrow function):
-// exercise5Array.forEach(
+exercise5Array.forEach(n => console.log(n * n));
 
 // Your solution here (regular arrow function):
-// exercise5Array.forEach((
+exercise5Array.forEach((n) => {
+  console.log(n * n);
+});
 
 // Expected output: 4, 16, 36, 64 (each on a new line)
-

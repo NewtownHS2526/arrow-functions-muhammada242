@@ -22,7 +22,6 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise1Array = [
   { name: "Alice", age: 25 },
   { name: "Bob", age: 30 },
@@ -30,10 +29,12 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.map(person => person.name);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.map((person) => {
+  return person.name;
+});
 
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
@@ -43,21 +44,22 @@ const exercise1Array = [
 /*
 EXERCISE 2
 ----------
-Given the array [5, 10, 15, 20], use map() to create a new array 
-where each number is converted to a string with " dollars" added.
+Given the array [5, 10, 15, 20], use map() to create a new array where
+each number is converted to a string with " dollars" added.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise2Array = [5, 10, 15, 20];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.map(n => n + " dollars");
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.map((n) => {
+  return n + " dollars";
+});
 
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
@@ -67,21 +69,22 @@ const exercise2Array = [5, 10, 15, 20];
 /*
 EXERCISE 3
 ----------
-Given the array ["red", "green", "blue"], use map() to create a new array 
-where each color is wrapped in HTML tags like "<div>color</div>".
+Given the array ["red", "green", "blue"], use map() to create a new
+array where each color is wrapped in HTML tags like "<div>color</div>".
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise3Array = ["red", "green", "blue"];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
+const exercise3Result1 = exercise3Array.map(color => `<div>${color}</div>`);
 
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
+const exercise3Result2 = exercise3Array.map((color) => {
+  return `<div>${color}</div>`;
+});
 
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
@@ -91,21 +94,22 @@ const exercise3Array = ["red", "green", "blue"];
 /*
 EXERCISE 4
 ----------
-Given the array [1, 2, 3, 4, 5], use map() to create a new array 
-where each number is multiplied by itself and then added 10.
+Given the array [1, 2, 3, 4, 5], use map() to create a new array where
+each number is multiplied by itself and then added 10.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise4Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.map(n => n * n + 10);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.map((n) => {
+  return n * n + 10;
+});
 
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
@@ -115,8 +119,9 @@ const exercise4Array = [1, 2, 3, 4, 5];
 /*
 EXERCISE 5
 ----------
-Given the array ["apple", "banana", "cherry"], use map() to create a new array 
-where each fruit name is reversed (e.g., "apple" becomes "elppa").
+Given the array ["apple", "banana", "cherry"], use map() to create a
+new array where each fruit name is reversed (e.g., "apple" becomes
+"elppa").
 
 Hint: You can use split(''), reverse(), and join('') methods.
 
@@ -124,17 +129,17 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise5Array = ["apple", "banana", "cherry"];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.map(fruit => fruit.split('').reverse().join(''));
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.map((fruit) => {
+  return fruit.split('').reverse().join('');
+});
 
 // Uncomment to test:
 // console.log("Exercise 5 - One-line:", exercise5Result1);
 // console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: ["elppa", "ananab", "yrrehc"]
-

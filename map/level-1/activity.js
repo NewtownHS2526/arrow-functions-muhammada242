@@ -4,9 +4,9 @@
 
 /*
 WHAT IS AN ARRAY?
-================
-An array is a special variable that can hold multiple values at once. 
-Think of it like a list or a collection of items. Arrays are ordered, 
+=================
+An array is a special variable that can hold multiple values at once.
+Think of it like a list or a collection of items. Arrays are ordered,
 meaning each item has a position (called an index) starting from 0.
 
 Example:
@@ -18,8 +18,8 @@ const mixed = [1, "hello", true, 42];
 /*
 WHAT IS THE map() FUNCTION?
 ===========================
-The map() function is used to TRANSFORM every element in an array and 
-create a new array with the transformed values. It doesn't change the 
+The map() function is used to TRANSFORM every element in an array and
+create a new array with the transformed values. It doesn't change the
 original array - it returns a brand new array.
 
 Key Points:
@@ -99,121 +99,24 @@ console.log("Example 3 - Regular:", withPrefix2); // ["Fruit: apple", "Fruit: ba
 /*
 EXERCISE 1
 ----------
-Given the array [1, 2, 3, 4, 5], use map() to create a new array 
-where each number is multiplied by 3.
+Given the array [1, 2, 3, 4, 5], use map() to create a new array where
+each number is multiplied by 3.
 
 Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.map(n => n * 3);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.map((n) => {
+  return n * 3;
+});
 
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: [3, 6, 9, 12, 15]
-
-/*
-EXERCISE 2
-----------
-Given the array ["hello", "world", "javascript"], use map() to create 
-a new array where each string has "!" added at the end.
-
-Write your solution using:
-- One-line arrow function
-- Regular arrow function
-*/
-
-const exercise2Array = ["hello", "world", "javascript"];
-
-// Your solution here (one-line arrow function):
-// const exercise2Result1 = 
-
-// Your solution here (regular arrow function):
-// const exercise2Result2 = 
-
-// Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
-// Expected: ["hello!", "world!", "javascript!"]
-
-/*
-EXERCISE 3
-----------
-Given the array [10, 20, 30, 40], use map() to create a new array 
-where each number is divided by 2.
-
-Write your solution using:
-- One-line arrow function
-- Regular arrow function
-*/
-
-const exercise3Array = [10, 20, 30, 40];
-
-// Your solution here (one-line arrow function):
-// const exercise3Result1 = 
-
-// Your solution here (regular arrow function):
-// const exercise3Result2 = 
-
-// Uncomment to test:
-// console.log("Exercise 3 - One-line:", exercise3Result1);
-// console.log("Exercise 3 - Regular:", exercise3Result2);
-// Expected: [5, 10, 15, 20]
-
-/*
-EXERCISE 4
-----------
-Given the array ["cat", "dog", "bird"], use map() to create a new array 
-where each string is converted to uppercase and has "s" added at the end 
-(making them plural).
-
-Write your solution using:
-- One-line arrow function
-- Regular arrow function
-*/
-
-const exercise4Array = ["cat", "dog", "bird"];
-
-// Your solution here (one-line arrow function):
-// const exercise4Result1 = 
-
-// Your solution here (regular arrow function):
-// const exercise4Result2 = 
-
-// Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
-// Expected: ["CATS", "DOGS", "BIRDS"]
-
-/*
-EXERCISE 5
-----------
-Given the array [2, 4, 6, 8], use map() to create a new array where 
-each number is squared (multiplied by itself).
-
-Write your solution using:
-- One-line arrow function
-- Regular arrow function
-*/
-
-const exercise5Array = [2, 4, 6, 8];
-
-// Your solution here (one-line arrow function):
-// const exercise5Result1 = 
-
-// Your solution here (regular arrow function):
-// const exercise5Result2 = 
-
-// Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
-// Expected: [4, 16, 36, 64]
-
